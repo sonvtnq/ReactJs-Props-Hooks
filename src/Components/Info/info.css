@@ -1,0 +1,10 @@
+.info{
+    position: fixed;
+    right: 0;
+    height: auto;
+    transform: translateX(700px);
+    transition: transform 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.show{
+    transform: translateX(0);
+}

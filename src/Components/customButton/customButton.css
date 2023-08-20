@@ -1,0 +1,20 @@
+.button{
+    padding: .5rem 1rem;
+    margin: .5rem;
+    border-radius: 4px;
+    border: none;
+    color:#fff;
+    cursor: pointer;
+}
+.btn-red{
+    background-color: #f95f53;
+}
+.btn-blue{
+    background-color: #172d88;
+}
+.btn-yellow{
+    background-color: #ffaf00;
+}
+.btn-green{
+    background-color: #34b1aa;
+}

@@ -1,0 +1,22 @@
+.custom-input{
+    padding: 1rem 1rem;
+    /* padding-bottom: 2rem; */
+    display: flex;
+    align-items: center;
+    & label{
+        min-width: 150px;
+        margin-right: 1rem;
+    }
+    & input,select{
+        border: 1px solid rgba(0,0,0,0.4);
+        padding: .5rem 1rem;
+        border-radius: .25rem;
+        width: 100%;
+    }
+    & select option{
+        padding: .5rem 1rem;
+    }
+}
+.d-none{
+    display: none;
+}

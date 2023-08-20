@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.d-none{
+    display: none !important;
+}
+.main{
+    margin:1rem;
+    width:100%;
+    transition: margin 600ms cubic-bezier(0.39, 0.575, 0.565, 1) ;
+    &.showInfo{
+        margin-right: 570px;
+    }
+}
