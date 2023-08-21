@@ -85,6 +85,7 @@ const Main=props=>{
                 return 
             case 'delete':
                 setListData(prevListData => prevListData.filter((_, index) => index !== keyIndex));
+                setType('')
                 // console.log('delete');
                 return 
             default:
