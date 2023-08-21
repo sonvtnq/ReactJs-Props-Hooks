@@ -53,6 +53,7 @@ const Data=(props)=>{
             </div>
             <div className='data'>
                 {
+                    !props.dataAfterSearch?(
                     props.listData.map((rowData,index)=>{
                         return(
                             <RowData
@@ -69,6 +70,24 @@ const Data=(props)=>{
                         )
                         
                     })
+                    ):(
+                        props.dataAfterSearch.map((rowData,index)=>{
+                            return(
+                                <RowData
+                                    key={index}
+                                    widthColunm={widthColunm}
+                                    detail={() => detail(index + 1)}
+                                    update={() => update(index + 1)}
+                                    deleteSV={() => deleteSV(index + 1)}
+                                    // update={update}
+                                    // deleteSV={deleteSV}
+                                    data={rowData}
+                                    stt={index+1}
+                                />
+                            )
+                            
+                        })
+                    )
                 }
             </div>
         </div>

@@ -6,7 +6,13 @@ const MainHeader=props=>{
         props.add();
     }
     const search=()=>{
+        // console.log(props.searchTerm);
+        
         props.search()
+    }
+    const _inputChange=e=>{
+        // console.log(e.target.value);
+        props.setSearchTerm(e.target.value)
     }
     const selectionsSort=[
         'Sắp xếp',
@@ -43,6 +49,7 @@ const MainHeader=props=>{
                     placeholder='Search here'
                     paddingRight='0px'
                     width='300px'
+                    inputChange={_inputChange}
                 />
                 <CustomButton
                     content='Tìm kiếm'
